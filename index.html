@@ -34,7 +34,7 @@
       name="twitter:image"
       content="https://panasonic-membership-landing.vercel.app/assets/og-panasonic-membership.png"
     />
-    <link rel="stylesheet" href="style.css?v=60" />
+    <link rel="stylesheet" href="style.css?v=61" />
   </head>
   <body>
     <a class="sticky-cta" href="#app">Mở app tích điểm</a>
@@ -472,19 +472,66 @@
         </div>
       </section>
 
-      <section id="app" class="download-section">
+      <section id="app" class="download-section" aria-labelledby="download-title">
         <div class="page-width download-card">
           <div class="download-brand">
-            <img class="app-logo-lockup" src="assets/my-panasonic-lockup.png" alt="Ứng dụng My Panasonic+" />
+            <img src="my-panasonic-icon.webp" alt="" width="240" height="240" loading="lazy">
+            <strong>
+              My Panasonic+
+            </strong>
+            <small>
+              Smart Connected Life
+            </small>
           </div>
           <div class="download-copy">
-            <h2>Một chạm <em>kích hoạt</em>,<br />Trọn quyền lợi <em>bảo hành</em></h2>
-            <p>Quét mã để tải app và bắt đầu quản lý bảo hành điện tử.</p>
+            <h2 id="download-title">
+              Một chạm
+              <em>
+                quản lý,
+              </em>
+              <br>
+              An tâm
+              <em>
+                tận hưởng
+              </em>
+            </h2>
+            <p>
+              Tải My Panasonic+ và đăng ký sản phẩm để tận hưởng trải nghiệm quản lý bảo hành thuận tiện hơn.
+            </p>
           </div>
-          <div class="qr">QR</div>
+          <a class="download-qr" href="https://mypanasonic.org/4iz60Pc?r=qr" target="_blank" rel="noopener" aria-label="Mở trang tải My Panasonic+">
+            <img src="assets/my-panasonic-download-qr.png" alt="Quét mã QR để tải My Panasonic+" width="2000" height="2000" loading="lazy">
+          </a>
           <div class="store-buttons">
-            <a href="#app">App Store</a>
-            <a href="#app">Google Play</a>
+            <a class="store-badge" href="https://apps.apple.com/vn/search?term=My%20Panasonic%2B" target="_blank" rel="noopener" aria-label="Tìm My Panasonic+ trên App Store">
+              <svg viewBox="0 0 24 28" fill="currentColor" aria-hidden="true">
+                <path d="M16 5c1-1 2-3 2-5-2 0-4 1-5 3-1 1-2 3-1 4 1 0 3-1 4-2ZM20 15c0-3 2-5 3-5-2-3-4-4-6-4-2 0-4 2-5 2s-3-2-5-2c-4 0-7 4-7 8 0 5 4 13 7 13 2 0 3-1 5-1s3 1 5 1c3 0 6-5 7-8-2-1-4-2-4-4Z" />
+              </svg>
+              <span>
+                <small>
+                  Download on the
+                </small>
+                <b>
+                  App Store
+                </b>
+              </span>
+            </a>
+            <a class="store-badge" href="https://play.google.com/store/search?q=My%20Panasonic%2B&amp;c=apps" target="_blank" rel="noopener" aria-label="Tìm My Panasonic+ trên Google Play">
+              <svg viewBox="0 0 24 28" aria-hidden="true">
+                <path d="M2 1v26l13-13Z" fill="#3bccff" />
+                <path d="m2 1 16 9-3 4Z" fill="#38d982" />
+                <path d="m2 27 16-9-3-4Z" fill="#ff4e63" />
+                <path d="m15 14 3-4 6 4-6 4Z" fill="#ffd44b" />
+              </svg>
+              <span>
+                <small>
+                  GET IT ON
+                </small>
+                <b>
+                  Google Play
+                </b>
+              </span>
+            </a>
           </div>
         </div>
       </section>

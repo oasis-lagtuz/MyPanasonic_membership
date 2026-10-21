@@ -2105,77 +2105,147 @@ p {
 }
 
 .download-card {
+  position: relative;
+  isolation: isolate;
   display: grid;
-  grid-template-columns: 160px 1fr 130px 170px;
+  grid-template-columns: 120px minmax(0, 1fr) 156px 160px;
   align-items: center;
   gap: 24px;
+  overflow: hidden;
   border-radius: 18px;
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(229, 242, 255, 0.92)),
-    #eaf3ff;
-  padding: 24px 34px;
+  background: linear-gradient(150deg, #c6ddff, #f5f9ff 55%, #c8defe);
+  padding: 28px;
+}
+
+.download-card::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(150deg, transparent 65%, #ffffff40 65%, #ffffff40 77%, transparent 77%);
+  content: "";
+  pointer-events: none;
 }
 
 .download-brand {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  color: #0055d5;
+  text-align: center;
 }
 
-.app-logo-lockup {
+.download-brand img {
   display: block;
-  width: min(100%, 190px);
-  height: auto;
+  width: 88px;
+  height: 88px;
+  margin-bottom: 8px;
+  border-radius: 20px;
+  object-fit: contain;
+  box-shadow: 0 4px 12px #255dc21a;
+}
+
+.download-brand strong {
+  font-size: var(--font-size-detail);
+  line-height: 1.4;
+}
+
+.download-brand small {
+  font-size: 0.5625rem;
+  line-height: 1.4;
+}
+
+.download-copy {
+  min-width: 0;
+  border-left: 1px solid #8bb4fb;
+  padding-left: 24px;
 }
 
 .download-copy h2 {
+  margin-bottom: 14px;
   color: var(--navy);
   font-size: var(--font-size-download);
-  line-height: 1.25;
   font-weight: 700;
+  line-height: 1.25;
   letter-spacing: -0.05rem;
 }
 
 .download-copy p {
-  margin-top: 10px;
-  color: var(--muted);
+  max-width: 420px;
+  color: #5b718d;
   font-size: var(--font-size-caption);
   font-weight: 400;
   line-height: 1.6;
 }
 
-.qr {
-  display: grid;
-  width: 112px;
-  height: 112px;
-  place-items: center;
-  border: 8px solid #fff;
-  background:
-    linear-gradient(90deg, #111 10px, transparent 10px) 0 0 / 22px 22px,
-    linear-gradient(#111 10px, transparent 10px) 0 0 / 22px 22px,
-    #fff;
-  color: #005fd5;
-  font-weight: 950;
-  box-shadow: 0 8px 22px rgba(0, 66, 145, 0.12);
+.download-qr {
+  display: block;
+  width: 156px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 3px 10px #255dc212;
+}
+
+.download-qr img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
 }
 
 .store-buttons {
   display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
+  width: 160px;
+  max-width: 100%;
 }
 
-.store-buttons a {
-  display: grid;
+.store-badge {
+  display: flex;
+  min-width: 0;
   min-height: 44px;
-  place-items: center;
-  border-radius: 10px;
-  background: #101828;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #8e8e8e;
+  border-radius: 6px;
+  background: #050505;
+  padding: 5px 8px;
   color: #fff;
-  font-weight: 500;
+  font-family: Arial, sans-serif;
+  box-shadow: inset 0 0 0 1px #ffffff18;
+}
+
+.store-badge svg {
+  flex: none;
+  width: 25px;
+  height: 29px;
+}
+
+.store-badge small {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 0.5625rem;
+  line-height: 1.1;
+}
+
+.store-badge b {
+  display: block;
   font-size: 1.125rem;
+  font-weight: 500;
   line-height: 1.1;
   letter-spacing: -0.03125rem;
-  font-family: Arial, sans-serif;
+}
+
+.store-badge:hover {
+  background: #202020;
+}
+
+.download-card a:focus-visible {
+  outline: 3px solid #1685ef;
+  outline-offset: 4px;
 }
 
 .footer {
@@ -2599,8 +2669,7 @@ p {
     opacity: 0.75;
   }
 
-  .intro-grid,
-  .download-card {
+  .intro-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2808,9 +2877,6 @@ p {
     grid-template-columns: 34px 40px 1fr;
   }
 
-  .download-card {
-    padding: 22px;
-  }
 }
 
 @media (max-width: 560px) {
@@ -3439,30 +3505,6 @@ p {
     padding-bottom: 26px;
   }
 
-  .download-card {
-    grid-template-columns: 1fr;
-    gap: 16px;
-    border-radius: 20px;
-    padding: 22px 18px;
-    text-align: center;
-  }
-
-  .download-brand {
-    justify-content: center;
-  }
-
-  .app-logo-lockup {
-    width: min(240px, 100%);
-  }
-
-  .qr {
-    display: none;
-  }
-
-  .store-buttons {
-    grid-template-columns: 1fr;
-  }
-
   .footer {
     padding: 18px 0 92px;
     font-size: 0.7rem;
@@ -3595,5 +3637,47 @@ p {
 
   .faq-list {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .download-card {
+    grid-template-columns: 110px minmax(0, 1fr) 144px;
+    gap: 20px;
+  }
+
+  .download-brand {
+    grid-row: 1 / 3;
+  }
+
+  .download-qr {
+    width: 144px;
+  }
+
+  .download-card .store-buttons {
+    grid-column: 2 / 4;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 330px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 760px) {
+  .download-card {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 22px;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .download-copy {
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .download-brand img {
+    width: 80px;
+    height: 80px;
   }
 }
