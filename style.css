@@ -163,16 +163,14 @@ button {
 
 .hero {
   position: relative;
-  height: min(821px, 42.85vw);
-  min-height: 330px;
   overflow: hidden;
   background: #eaf5ff;
 }
 
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  background: url("assets/urbox-hero-banner-membership.png") top center / contain no-repeat;
+.hero-banner {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .hero-copy,
@@ -2593,10 +2591,6 @@ p {
     width: min(410px, 74vw);
   }
 
-  .hero {
-    min-height: clamp(340px, 43.23vw, 560px);
-  }
-
   .hero-copy {
     padding-top: 48px;
   }
@@ -2736,14 +2730,6 @@ p {
     overflow-x: auto;
     justify-content: flex-start;
     padding: 0 16px;
-  }
-
-  .hero {
-    min-height: 360px;
-  }
-
-  .hero-bg {
-    background: url("assets/urbox-hero-banner-membership.png") top center / contain no-repeat;
   }
 
   .partner-lockup {
@@ -2958,18 +2944,6 @@ p {
     padding: 0 14px;
     font-size: 0.68rem;
     text-align: center;
-  }
-
-  .hero {
-    height: auto;
-    min-height: 0;
-    aspect-ratio: 1916 / 821;
-    background: #eaf5ff;
-  }
-
-  .hero-bg {
-    background-position: top center;
-    background-size: contain;
   }
 
   .spin-section {
