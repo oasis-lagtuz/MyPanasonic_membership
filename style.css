@@ -1935,6 +1935,11 @@ p {
     border-color: #648dff;
     box-shadow: 0 12px 28px rgba(0, 78, 162, 0.12);
   }
+
+  .benefit-grid article:hover .benefit-number {
+    background: #0055e8;
+    color: #fff;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
