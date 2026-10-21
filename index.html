@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Panasonic+ Reward - Panasonic Vietnam</title>
+    <meta
+      name="description"
+      content="Tích Panasonic Coins, nhận mã Panacoin và khám phá quyền lợi trong Panasonic Reward Store trên My Panasonic+."
+    />
+    <link rel="canonical" href="https://panasonic-membership-landing.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Panasonic Vietnam" />
+    <meta property="og:title" content="My Panasonic+ Reward - Panasonic Vietnam" />
+    <meta
+      property="og:description"
+      content="Tích Panasonic Coins, nhận mã Panacoin và khám phá quyền lợi trong Panasonic Reward Store trên My Panasonic+."
+    />
+    <meta property="og:url" content="https://panasonic-membership-landing.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://panasonic-membership-landing.vercel.app/assets/og-panasonic-membership.png"
+    />
+    <meta property="og:image:width" content="1731" />
+    <meta property="og:image:height" content="909" />
+    <meta property="og:image:alt" content="My Panasonic+ Reward - Tích điểm nhỏ, mở quyền lợi lớn" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Panasonic+ Reward - Panasonic Vietnam" />
+    <meta
+      name="twitter:description"
+      content="Tích Panasonic Coins, nhận mã Panacoin và khám phá quyền lợi trong Panasonic Reward Store trên My Panasonic+."
+    />
+    <meta
+      name="twitter:image"
+      content="https://panasonic-membership-landing.vercel.app/assets/og-panasonic-membership.png"
+    />
+    <link rel="stylesheet" href="style.css?v=57" />
+  </head>
+  <body>
+    <a class="sticky-cta" href="#app">Mở app tích điểm</a>
+
+    <header class="site-header">
+      <div class="topline">
+        <span>Panasonic Vietnam</span>
+      </div>
+      <div class="brand-row">
+        <button class="mobile-menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="panasonic-logo" href="#top">Panasonic</a>
+        <div class="header-tools">
+          <span>Hỗ Trợ</span>
+          <span class="search-dot"></span>
+        </div>
+      </div>
+      <nav class="mini-nav" aria-label="Điều hướng">
+        <a href="#intro">Sản phẩm</a>
+        <a href="#benefit">Doanh Nghiệp</a>
+        <a href="#top">Panasonic Việt Nam</a>
+        <a href="#app">Cửa hàng trực tuyến</a>
+      </nav>
+      <div class="header-tagline"><span aria-hidden="true">♛</span> Nâng tầm cuộc sống và tối ưu trải nghiệm</div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+      </section>
+
+      <section id="minigame" class="spin-section">
+        <div class="spin-heading page-width">
+          <h2><span>Mở lượt quay,</span> nhận ngay quyền lợi!</h2>
+          <p>
+            Tham gia minigame để nhận mã Panacoin. Sau đó, nhập mã trong ứng dụng My Panasonic+ để cộng coin và khám
+            phá các quyền lợi trong Panasonic Reward Store.
+          </p>
+        </div>
+        <div class="spin-shell page-width">
+          <div class="spin-main">
+            <div class="spin-copy">
+              <h2>
+                UNLOCK<br />
+                MY<br />
+                <strong>PANASONIC+</strong>
+              </h2>
+            </div>
+
+            <div class="wheel-stage">
+              <span class="spin-spark spin-spark-a" aria-hidden="true">✦</span>
+              <span class="spin-spark spin-spark-b" aria-hidden="true">✦</span>
+              <span class="spin-coin spin-coin-a" aria-hidden="true">P</span>
+              <span class="spin-coin spin-coin-b" aria-hidden="true">P</span>
+              <div class="wheel-pointer" aria-hidden="true"></div>
+              <div class="spin-wheel" id="spinWheel" aria-label="Vòng quay Panasonic Coins">
+                <div class="wheel-prize prize-top" style="--x: 50%; --y: 18%"><i>P</i><b>10</b><span>Panacoin</span></div>
+                <div class="wheel-prize prize-upper-right" style="--x: 76%; --y: 24%"><i>P</i><b>1</b><span>Panacoin</span></div>
+                <div class="wheel-prize prize-right" style="--x: 84%; --y: 50%"><i>P</i><b>2</b><span>Panacoin</span></div>
+                <div class="wheel-prize prize-lower-right" style="--x: 76%; --y: 76%"><i>P</i><b>2</b><span>Panacoin</span></div>
+                <div class="wheel-prize prize-bottom" style="--x: 50%; --y: 84%"><i>P</i><b>3</b><span>Panacoin</span></div>
+                <div class="wheel-prize prize-lower-left" style="--x: 24%; --y: 76%"><i>P</i><b>3</b><span>Panacoin</span></div>
+                <div class="wheel-prize prize-left" style="--x: 16%; --y: 50%"><i>P</i><b>5</b><span>Panacoin</span></div>
+                <div class="wheel-prize prize-upper-left" style="--x: 24%; --y: 24%"><i>P</i><b>1</b><span>Panacoin</span></div>
+                <div class="wheel-center"><span>P</span></div>
+              </div>
+              <div class="wheel-base" aria-hidden="true"></div>
+              <p class="turn-note"><span aria-hidden="true">◷</span> Bạn còn 1 lượt quay hôm nay</p>
+              <button class="spin-button" id="spinButton" type="button">QUAY NGAY</button>
+              <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <aside class="spin-side" aria-label="Thông tin minigame Panasonic Coins">
+            <article class="spin-card code-card">
+              <h3>MÃ PANASONIC COIN CỦA BẠN</h3>
+              <div class="code-box">
+                <strong id="panacoinCode">XXXXXXX</strong>
+                <button id="copyCode" type="button" aria-label="Sao chép mã Panacoin">⧉</button>
+              </div>
+              <p id="spinResultText">Mã sẽ hiển thị sau khi bạn hoàn tất lượt quay.</p>
+              <button class="claim-reopen" id="claimReopen" type="button" hidden>Lấy mã ngay!</button>
+            </article>
+
+            <article class="spin-card prize-card">
+              <h3>PHẦN QUÀ CÓ THỂ NHẬN</h3>
+              <div class="prize-grid">
+                <span><i>P</i><b>1</b><small>Panacoin</small></span>
+                <span><i>P</i><b>2</b><small>Panacoin</small></span>
+                <span><i>P</i><b>3</b><small>Panacoin</small></span>
+                <span><i>P</i><b>4</b><small>Panacoin</small></span>
+                <span><i>P</i><b>5</b><small>Panacoin</small></span>
+                <span class="special"><em>ĐẶC BIỆT</em><i>P</i><b>10</b><small>Panacoin</small></span>
+              </div>
+            </article>
+
+            <article class="spin-card winner-card">
+              <h3>DANH SÁCH TRÚNG THƯỞNG</h3>
+              <div class="winner-head">
+                <span>Người trúng thưởng</span>
+                <span>Thời gian tham gia</span>
+                <span>Điểm nhận được</span>
+              </div>
+              <div class="winner-list" id="winnerList" tabindex="0">
+                <div class="winner-row"><span>*** Minh</span><time>12/05/2024 - 14:23</time><b>+5 <i>P</i></b></div>
+                <div class="winner-row"><span>*** Thu</span><time>12/05/2024 - 14:21</time><b>+3 <i>P</i></b></div>
+                <div class="winner-row"><span>*** Quang</span><time>12/05/2024 - 14:19</time><b>+4 <i>P</i></b></div>
+                <div class="winner-row"><span>*** Hồng</span><time>12/05/2024 - 14:17</time><b>+10 <i>P</i></b></div>
+                <div class="winner-row"><span>*** Hoàng</span><time>12/05/2024 - 14:15</time><b>+4 <i>P</i></b></div>
+                <div class="winner-row"><span>*** Lan</span><time>12/05/2024 - 14:12</time><b>+2 <i>P</i></b></div>
+                <div class="winner-row"><span>*** Phúc</span><time>12/05/2024 - 14:09</time><b>+5 <i>P</i></b></div>
+                <div class="winner-row"><span>*** Mai</span><time>12/05/2024 - 14:06</time><b>+1 <i>P</i></b></div>
+              </div>
+              <button class="winner-more" id="winnerMore" type="button">Xem tất cả người trúng thưởng <span>›</span></button>
+            </article>
+          </aside>
+        </div>
+      </section>
+
+      <section id="intro" class="intro-section">
+        <div class="intro-grid page-width">
+          <div class="coin-art" aria-hidden="true">
+            <span class="spark spark-1"></span>
+            <span class="spark spark-2"></span>
+            <div class="big-coin">P</div>
+            <span class="small-coin small-coin-a">P</span>
+            <span class="small-coin small-coin-b">P</span>
+            <div class="balance-card">
+              <b>1.250</b>
+              <span>PANASONIC COINS</span>
+              <em>Đổi quà</em>
+            </div>
+          </div>
+
+          <div class="intro-copy">
+            <p class="label">PANASONIC COINS</p>
+            <h2>Tích điểm nhỏ<br />Mở thêm quyền lợi <em>lớn</em></h2>
+            <p class="lead">
+              Panasonic Coins là điểm thưởng trong ứng dụng My Panasonic+. Người dùng có thể nhận coin thông qua hoạt
+              động quay minigame và đổi thành UrBox voucher để sử dụng các quyền lợi dành riêng cho người dùng của My
+              Panasonic+
+            </p>
+            <div class="step-list">
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>Tích coin dễ dàng</h3>
+                  <p>
+                    Nhận Panasonic Coins thông qua hoạt động trong ứng dụng My Panasonic+ hoặc các chương trình đặc
+                    quyền dành riêng cho hội viên.
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>Theo dõi minh bạch</h3>
+                  <p>Theo dõi Panasonic Coins và các nhiệm vụ đang mở ngay trong app</p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>Đổi voucher nhanh chóng</h3>
+                  <p>Cơ hội nhận miễn phí các dịch vụ sửa chữa từ Panasonic và e-voucher từ UrBox.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="urbox" class="urbox-section">
+        <div class="page-width section-title">
+          <h2>Panasonic Reward Store<br />Mọi quyền lợi kết nối trong một app</h2>
+          <p>
+            Từ dịch vụ chăm sóc sản phẩm đến các ưu đãi dành cho thành viên, Panasonic Reward Store giúp người dùng
+            dễ dàng khám phá và sử dụng quyền lợi trong hệ sinh thái My Panasonic+.
+          </p>
+        </div>
+        <div class="reward-store page-width" aria-label="Danh mục đổi voucher UrBox">
+          <article class="reward-category active" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon all-icon" aria-hidden="true">▦</span>
+              <b>All</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>Tất cả voucher nổi bật</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-grab"><span>GrabGifts</span><strong>GrabGifts 50.000đ</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-ministop"><span>MINISTOP</span><strong>MINISTOP 500.000 VND</strong><em><i>P</i>50</em></div>
+                <div class="voucher-card brand-ak"><span>An Khang</span><strong>An Khang Pharmacy 50.000 VND</strong><em><i>P</i>5</em></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reward-category" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon beauty-icon" aria-hidden="true">🧴</span>
+              <b>Beauty - Healthcare</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>Beauty - Healthcare</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-ak"><span>An Khang</span><strong>An Khang Pharmacy 50.000 VND</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-body"><span>The Body Shop</span><strong>The Body Shop 50.000 VND</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-face"><span>THE FACE SHOP</span><strong>THE FACE SHOP 50.000 VND</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-beauty"><span>BEAUTY BOX</span><strong>BEAUTY BOX 50.000 VND</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-pharma"><span>Pharmacity</span><strong>Pharmacity 50.000 VND</strong><em><i>P</i>5</em></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reward-category" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon fnb-icon" aria-hidden="true">☕</span>
+              <b>F&amp;B</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>F&amp;B</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-shopee"><span>ShopeeFood</span><strong>ShopeeFood 50.000 VND</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-ministop"><span>MINISTOP</span><strong>MINISTOP 500.000 VND</strong><em><i>P</i>50</em></div>
+                <div class="voucher-card brand-satra"><span>Satra Mart</span><strong>Satra Mart 100.000 VND</strong><em><i>P</i>10</em></div>
+                <div class="voucher-card brand-seafood"><span>Hải Sản Hoàng Gia</span><strong>Hải Sản Hoàng Gia 200.000 VND</strong><em><i>P</i>20</em></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reward-category" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon clean-icon" aria-hidden="true">🧹</span>
+              <b>Free Cleaning &amp; Maintenance</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>Platinum &amp; Diamond</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-service"><span>Máy giặt</span><strong>Vệ sinh &amp; bảo dưỡng máy giặt</strong><em><i>P</i>24</em></div>
+                <div class="voucher-card brand-service"><span>Máy giặt tháo lồng</span><strong>Vệ sinh &amp; bảo dưỡng máy giặt</strong><em><i>P</i>39 - 63</em></div>
+                <div class="voucher-card brand-service"><span>Tủ lạnh</span><strong>Vệ sinh &amp; bảo dưỡng tủ lạnh</strong><em><i>P</i>17 - 29</em></div>
+                <div class="voucher-card brand-service"><span>Điều hòa</span><strong>Vệ sinh &amp; bảo dưỡng điều hòa</strong><em><i>P</i>34 - 49</em></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reward-category" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon shopping-icon" aria-hidden="true">🛒</span>
+              <b>Shopping</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>Shopping</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-grab"><span>GrabGifts</span><strong>GrabGifts 50.000đ</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-satra"><span>Satra Mart</span><strong>Satra Mart 100.000 VND</strong><em><i>P</i>10</em></div>
+                <div class="voucher-card brand-ministop"><span>MINISTOP</span><strong>MINISTOP 500.000 VND</strong><em><i>P</i>50</em></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reward-category" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon travel-icon" aria-hidden="true">🎮</span>
+              <b>Travel - Entertainment</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>Travel - Entertainment</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-be"><span>beTransport</span><strong>beTransport 50.000 VND</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-be"><span>beTransport</span><strong>beTransport 100.000 VND</strong><em><i>P</i>10</em></div>
+                <div class="voucher-card brand-xanh"><span>Xanh SM</span><strong>Xanh SM 50.000 VND</strong><em><i>P</i>10</em></div>
+                <div class="voucher-card brand-xanh"><span>Xanh SM</span><strong>Xanh SM 100.000 VND</strong><em><i>P</i>20</em></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reward-category" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon utility-icon" aria-hidden="true">🧾</span>
+              <b>Utilities</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>Utilities</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-be"><span>Di chuyển</span><strong>beTransport 50.000 VND</strong><em><i>P</i>5</em></div>
+                <div class="voucher-card brand-xanh"><span>Di chuyển</span><strong>Xanh SM 50.000 VND</strong><em><i>P</i>10</em></div>
+                <div class="voucher-card brand-service"><span>Dịch vụ</span><strong>Voucher dịch vụ tiện ích</strong><em><i>P</i>Theo chương trình</em></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="reward-category" tabindex="0">
+            <div class="category-trigger">
+              <span class="category-icon warranty-icon" aria-hidden="true">👑</span>
+              <b>Extended Warranty</b>
+            </div>
+            <div class="voucher-popover">
+              <h3>Diamond only</h3>
+              <div class="voucher-list">
+                <div class="voucher-card brand-warranty"><span>Bảo hành</span><strong>Free Voucher Extended Warranty</strong><em><i>P</i>Khi đủ điều kiện</em></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="benefit" class="benefit-section">
+        <div class="page-width">
+          <h2>Mỗi tương tác với ứng dụng My Panasonic+ đều có giá trị</h2>
+          <div class="benefit-grid">
+            <article>
+              <span>1</span>
+              <h3>Đăng ký bảo hành</h3>
+              <p>Đăng ký bảo hành điện tử cho sản phẩm, hoàn thành hồ sơ.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3>Tương tác hằng ngày</h3>
+              <p>Chia sẻ, kiểm tra nhiệm vụ, tham gia khảo sát và các hoạt động khác.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3>Đặc quyền hội viên</h3>
+              <p>Đạt các mốc hoạt động để mở thêm ưu đãi và quyền lợi đặc biệt.</p>
+            </article>
+          </div>
+          <div class="blue-cta">
+            <h3>Đặc quyền lớn dành riêng cho hội viên Panasonic</h3>
+            <p>
+              Tải My Panasonic+ để nhập mã Panacoin và tiếp tục khám phá các tiện ích trong hành trình sở hữu
+              Panasonic.
+            </p>
+            <a href="#app">Xem tất cả cách kiếm coin</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq-section">
+        <div class="page-width">
+          <div class="section-title faq-title">
+            <h2>FAQ</h2>
+            <p>Tìm câu trả lời phổ biến về Panasonic Coins, mã Panacoin và Panasonic Reward Store.</p>
+          </div>
+
+          <div class="faq-list">
+            <article class="faq-item open">
+              <button class="faq-question" type="button">
+                <span>Panasonic Coins là gì?</span>
+                <i></i>
+              </button>
+              <p>
+                Panasonic Coins là điểm thưởng trong My Panasonic+. Người dùng có thể nhận coin thông qua các hoạt
+                động hợp lệ và sử dụng coin để khám phá quyền lợi trong Panasonic Reward Store theo điều kiện áp dụng.
+              </p>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Làm sao để nhận mã Panacoin từ minigame?</span>
+                <i></i>
+              </button>
+              <p>
+                Bạn tham gia quay Spin trên landing page, hoàn tất thông tin hợp lệ và hệ thống sẽ hiển thị mã
+                Panacoin tương ứng với kết quả quay.
+              </p>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Tôi nhập mã Panacoin ở đâu?</span>
+                <i></i>
+              </button>
+              <p>
+                Bạn vào My Panasonic+, đăng nhập hoặc tạo tài khoản, sau đó nhập mã theo mục được Panasonic hướng dẫn
+                trong chương trình.
+              </p>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Tôi có thể dùng Panasonic Coins để làm gì?</span>
+                <i></i>
+              </button>
+              <p>
+                Bạn có thể dùng Panasonic Coins để khám phá và đổi các quyền lợi trong Panasonic Reward Store, bao gồm
+                voucher dịch vụ, quà tặng điện tử hoặc ưu đãi thành viên theo điều kiện áp dụng.
+              </p>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Các quyền lợi trong Reward Store có cố định không?</span>
+                <i></i>
+              </button>
+              <p>
+                Không. Danh mục quyền lợi, số coin cần dùng, thời hạn sử dụng và điều kiện quy đổi có thể thay đổi theo
+                từng thời điểm.
+              </p>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Tôi có thể tham gia minigame nhiều lần không?</span>
+                <i></i>
+              </button>
+              <p>
+                Số lượt tham gia phụ thuộc vào thể lệ chương trình tại từng thời điểm. Vui lòng kiểm tra thông tin hiển
+                thị trên landing page hoặc trong My Panasonic+.
+              </p>
+            </article>
+            <article class="faq-item">
+              <button class="faq-question" type="button">
+                <span>Không nhận được OTP khi đăng ký app thì làm sao?</span>
+                <i></i>
+              </button>
+              <p>
+                Hãy kiểm tra số điện thoại, kết nối mạng và thử gửi lại OTP sau ít phút. Nếu vẫn gặp lỗi, vui lòng liên
+                hệ kênh hỗ trợ chính thức của Panasonic.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="app" class="download-section">
+        <div class="page-width download-card">
+          <div class="download-brand">
+            <img class="app-logo-lockup" src="assets/my-panasonic-lockup.png" alt="Ứng dụng My Panasonic+" />
+          </div>
+          <div class="download-copy">
+            <h2>Một chạm <em>kích hoạt</em>,<br />Trọn quyền lợi <em>bảo hành</em></h2>
+            <p>Quét mã để tải app và bắt đầu quản lý bảo hành điện tử.</p>
+          </div>
+          <div class="qr">QR</div>
+          <div class="store-buttons">
+            <a href="#app">App Store</a>
+            <a href="#app">Google Play</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="page-width">
+        <div class="footer-breadcrumb">
+          <span>Sản phẩm</span>
+          <span>Nâng tầm cuộc sống và tối ưu trải nghiệm</span>
+        </div>
+        <div class="footer-social">
+          <span>Facebook</span>
+          <span>YouTube</span>
+          <span>TikTok</span>
+          <span>Community</span>
+          <span>LinkedIn</span>
+        </div>
+        <div class="footer-policy">
+          <span>Về Chúng Tôi</span>
+          <span>Sơ đồ website</span>
+          <span>Điều khoản Sử dụng</span>
+          <span>Chính sách quyền riêng tư</span>
+          <span>Chính sách giao dịch chung</span>
+          <span>Đăng ký bảo hành cho đại lý</span>
+          <span>Địa điểm bảo hành</span>
+          <span class="footer-region">Khu Vực/Quốc Gia</span>
+        </div>
+        <div class="footer-bottom">
+          <p>Copyright © 2026 Panasonic Vietnam | Hotline : 1800 1593 | (024) 3767 7360</p>
+          <div class="trade-badge" aria-label="Đã thông báo Bộ Công Thương">
+            <span></span>
+            <b>ĐÃ THÔNG BÁO</b>
+            <small>BỘ CÔNG THƯƠNG</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-top" type="button" aria-label="Về đầu trang">↑</button>
+
+    <div class="claim-modal" id="claimModal" aria-hidden="true">
+      <div class="claim-dialog" role="dialog" aria-modal="true" aria-labelledby="claimTitle">
+        <button class="claim-close" id="claimClose" type="button" aria-label="Đóng popup">×</button>
+        <div class="claim-badge" aria-hidden="true">P</div>
+        <h2 id="claimTitle">Bạn thu thập được <span class="coin-highlight">x coin</span>.<br />Hãy hoàn tất thông tin để nhận mã ngay nhé!</h2>
+        <p>
+          Vui lòng điền thông tin bên dưới. Mã Panasonic Coins sẽ hiển thị sau khi bạn gửi thông tin thành công.
+        </p>
+        <form class="claim-form" id="claimForm">
+          <label>
+            <span>Họ và tên</span>
+            <input id="claimName" name="name" type="text" placeholder="Nhập họ và tên" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Số điện thoại</span>
+            <input
+              id="claimPhone"
+              name="phone"
+              type="tel"
+              placeholder="Nhập số điện thoại"
+              autocomplete="tel"
+              pattern="[0-9+ ]{9,14}"
+              required
+            />
+          </label>
+          <label>
+            <span>Email</span>
+            <input id="claimEmail" name="email" type="email" placeholder="Nhập email" autocomplete="email" required />
+          </label>
+          <p class="claim-error" id="claimError" role="alert"></p>
+          <button class="claim-submit" type="submit">Gửi thông tin và nhận mã</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="winners-modal" id="winnersModal" aria-hidden="true">
+      <div class="winners-dialog" role="dialog" aria-modal="true" aria-labelledby="winnersTitle">
+        <button class="winners-close" id="winnersClose" type="button" aria-label="Đóng danh sách">×</button>
+        <h2 id="winnersTitle">Danh sách người trúng thưởng</h2>
+        <p>Các lượt trúng thưởng gần đây trong chương trình minigame My Panasonic+.</p>
+        <div class="winners-table">
+          <div class="winner-head">
+            <span>Người trúng thưởng</span>
+            <span>Thời gian tham gia</span>
+            <span>Điểm nhận được</span>
+          </div>
+          <div class="winner-list winners-list-full">
+            <div class="winner-row"><span>*** Minh</span><time>12/05/2024 - 14:23</time><b>+5 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Thu</span><time>12/05/2024 - 14:21</time><b>+3 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Quang</span><time>12/05/2024 - 14:19</time><b>+4 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Hồng</span><time>12/05/2024 - 14:17</time><b>+10 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Hoàng</span><time>12/05/2024 - 14:15</time><b>+4 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Lan</span><time>12/05/2024 - 14:12</time><b>+2 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Phúc</span><time>12/05/2024 - 14:09</time><b>+5 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Mai</span><time>12/05/2024 - 14:06</time><b>+1 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Khoa</span><time>12/05/2024 - 14:03</time><b>+2 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Ngọc</span><time>12/05/2024 - 14:01</time><b>+10 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Anh</span><time>12/05/2024 - 13:58</time><b>+3 <i>P</i></b></div>
+            <div class="winner-row"><span>*** Vy</span><time>12/05/2024 - 13:55</time><b>+5 <i>P</i></b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js?v=41"></script>
+  </body>
+</html>
