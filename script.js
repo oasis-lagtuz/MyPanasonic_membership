@@ -24,10 +24,12 @@ document.querySelectorAll(".faq-question").forEach((button) => {
 
     document.querySelectorAll(".faq-item.open").forEach((openItem) => {
       openItem.classList.remove("open");
+      openItem.querySelector(".faq-question").setAttribute("aria-expanded", "false");
     });
 
     if (!isOpen) {
       item.classList.add("open");
+      button.setAttribute("aria-expanded", "true");
     }
   });
 });
