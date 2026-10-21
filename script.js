@@ -320,3 +320,51 @@ copyCode?.addEventListener("click", async () => {
     }, 1100);
   }
 });
+
+// Reveal the introduction once as each part enters the viewport.
+// Text stays visible when JavaScript or animation support is unavailable.
+const introMotionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+const introRevealElements = document.querySelectorAll(
+  "#intro .intro-copy > h2, #intro .intro-copy > .lead, #intro .step-list article",
+);
+
+if (
+  !introMotionPreference.matches &&
+  "IntersectionObserver" in window &&
+  typeof Element.prototype.animate === "function"
+) {
+  const introRevealAnimations = new Set();
+  const introRevealDelays = new Map(
+    [...introRevealElements].map((element, index) => [element, index * 70]),
+  );
+  const introRevealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        introRevealObserver.unobserve(entry.target);
+        const animation = entry.target.animate(
+          [
+            { opacity: 0, transform: "translateY(14px)" },
+            { opacity: 1, transform: "translateY(0)" },
+          ],
+          {
+            duration: 500,
+            delay: introRevealDelays.get(entry.target),
+            easing: "cubic-bezier(0.2, 0.7, 0.3, 1)",
+            fill: "backwards",
+          },
+        );
+        introRevealAnimations.add(animation);
+        animation.onfinish = () => introRevealAnimations.delete(animation);
+      });
+    },
+    { threshold: 0.12, rootMargin: "0px 0px -24px 0px" },
+  );
+  introRevealElements.forEach((element) => introRevealObserver.observe(element));
+  introMotionPreference.addEventListener("change", (event) => {
+    if (!event.matches) return;
+    introRevealObserver.disconnect();
+    introRevealAnimations.forEach((animation) => animation.cancel());
+    introRevealAnimations.clear();
+  });
+}

@@ -1326,6 +1326,8 @@ p {
   align-items: start;
   border-bottom: 1px solid #e7eef7;
   padding-bottom: 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, translate 0.2s ease;
 }
 
 .step-list span {
@@ -1348,6 +1350,30 @@ p {
   font-size: var(--font-size-detail);
   line-height: 1.7;
   font-weight: 400;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .step-list article:hover {
+    translate: 4px 0;
+    border-color: #bcd6ff;
+    background-color: #f3f8ff;
+    box-shadow: 0 0 0 8px #f3f8ff;
+  }
+
+  .step-list article:hover > span,
+  .step-list article:hover h3 {
+    color: #0055e8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .step-list article {
+    transition: none;
+  }
+
+  .step-list article:hover {
+    translate: none;
+  }
 }
 
 .urbox-section {
