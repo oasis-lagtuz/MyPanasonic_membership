@@ -1795,7 +1795,7 @@ p {
   width: 74px;
   height: 74px;
   background: #f1f5fb;
-  color: var(--blue);
+  color: #0b43ad;
   font-size: 2rem;
   line-height: 1;
   box-shadow: inset 0 0 0 1px rgba(0, 78, 162, 0.06);
@@ -1804,6 +1804,21 @@ p {
 .category-icon::before,
 .category-icon::after {
   display: none;
+}
+
+.category-icon svg {
+  display: block;
+  width: 68%;
+  height: 68%;
+}
+
+.category-icon .icon-accent {
+  stroke: #e4ab12;
+}
+
+.category-icon .icon-accent-fill {
+  fill: #e4ab12;
+  stroke: none;
 }
 
 .all-icon {
