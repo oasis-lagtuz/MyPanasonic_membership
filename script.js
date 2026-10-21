@@ -368,3 +368,53 @@ if (
     introRevealAnimations.clear();
   });
 }
+
+// Keep the three coin-earning steps visibly highlighted in turn.
+const introSteps = [...document.querySelectorAll("#intro .step-list article")];
+const introStepList = document.querySelector("#intro .step-list");
+
+if (introStepList && introSteps.length && "IntersectionObserver" in window) {
+  let introActiveStep = 0;
+  let introStepTimer;
+  let introStepsVisible = false;
+  let introStepsHovered = false;
+
+  const highlightIntroStep = (index) => {
+    introActiveStep = index;
+    introSteps.forEach((step, stepIndex) => {
+      step.classList.toggle("intro-step-active", stepIndex === index);
+    });
+  };
+  const syncIntroStepTimer = () => {
+    window.clearInterval(introStepTimer);
+    if (
+      !introStepsVisible || introStepsHovered || document.hidden ||
+      introMotionPreference.matches
+    ) return;
+    introStepTimer = window.setInterval(() => {
+      highlightIntroStep((introActiveStep + 1) % introSteps.length);
+    }, 3000);
+  };
+
+  const introStepsObserver = new IntersectionObserver((entries) => {
+    introStepsVisible = entries[0].isIntersecting;
+    syncIntroStepTimer();
+  }, { threshold: 0.1 });
+  introStepsObserver.observe(introStepList);
+
+  introSteps.forEach((step, index) => {
+    step.addEventListener("pointerenter", (event) => {
+      if (event.pointerType !== "mouse") return;
+      introStepsHovered = true;
+      highlightIntroStep(index);
+      syncIntroStepTimer();
+    });
+  });
+  introStepList.addEventListener("pointerleave", (event) => {
+    if (event.pointerType !== "mouse") return;
+    introStepsHovered = false;
+    syncIntroStepTimer();
+  });
+  document.addEventListener("visibilitychange", syncIntroStepTimer);
+  introMotionPreference.addEventListener("change", syncIntroStepTimer);
+}
